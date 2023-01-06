@@ -14,11 +14,11 @@ MainWindow::~MainWindow()
 }
 
 void MainWindow::paintEvent(QPaintEvent *)
-{   Image image("F:/zhivotnoye.jpg",200);
+{   Image image("filename",1);
     image.jpeg();
     QImage im1=image.getIm();
     QImage im2=image.getOldIm();
-    im1.save("F:/Result/new_zhivotnoye(k=200).jpg");
+    im1.save("newFilename(k=1).jpg");
     QPainter painter(this);
 
 
